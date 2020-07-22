@@ -28,7 +28,7 @@ twitter_username: wingsfoundations
 github_username:  joshicoding
 
 # Build settings
-theme: jekyll-theme-slate
+theme: minima
 plugins:
   - jekyll-feed
 
