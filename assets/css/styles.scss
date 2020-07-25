@@ -68,8 +68,47 @@ header{
         }
        
         .hamburger-menu-options{
-            display:none;
+            overflow:hidden;
+            position:fixed;
+            top:0;
+            right:0;
+            list-style-type:none;
+            width:0;
+            height:100vh;
+            z-index:100;
+            background:var(--color-background);
+            display:flex;
+            flex-direction:column;
+            transition:width 150ms linear;
+
+            .hamburger-close-btn{
+                text-align:right;
+                width:20%;
+                align-self:flex-end;
+            }
+            li{
+                // border:2px solid red;
+                padding:20px;
+                width:100%;
+
+               
+                a{
+                    text-decoration:none;
+                    color:var(--color-font);
+                    font-weight:600;
+                    font-size:0;
+                }
+            }
+
           
+        }
+        .hamburger-menu-options-open{
+            width:60vw;
+            li {
+                a{
+                    font-size:20px;
+                }
+            }
         }
     }
 }
@@ -281,10 +320,10 @@ section{
 
 .who{
     .team-member{
-        border:2px solid var(--color-font);
+        // border:2px solid var(--color-font);
         margin:40px;
-        width:250px;
-        height:250px;
+        width:350px;
+        height:350px;
         border-radius:50%;
         overflow:hidden;
         position:relative;

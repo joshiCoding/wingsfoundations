@@ -9,7 +9,12 @@ header .logo { margin-left: var(--spacer); width: 60px; height: 40px; }
 header .logo img { width: 100%; }
 header nav { display: flex; justify-content: space-between; align-items: center; width: 30%; margin-right: var(--spacer); }
 header nav .head-btn { border: none; background: var(--color-btn); padding: 7px 12px; border-radius: 10px; color: var(--color-font-light); font-size: 16px; }
-header nav .hamburger-menu-options { display: none; }
+header nav .hamburger-menu-options { overflow: hidden; position: fixed; top: 0; right: 0; list-style-type: none; width: 0; height: 100vh; z-index: 100; background: var(--color-background); display: flex; flex-direction: column; transition: width 150ms linear; }
+header nav .hamburger-menu-options .hamburger-close-btn { text-align: right; width: 20%; align-self: flex-end; }
+header nav .hamburger-menu-options li { padding: 20px; width: 100%; }
+header nav .hamburger-menu-options li a { text-decoration: none; color: var(--color-font); font-weight: 600; font-size: 0; }
+header nav .hamburger-menu-options-open { width: 60vw; }
+header nav .hamburger-menu-options-open li a { font-size: 20px; }
 
 section { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: calc( 2 * var(--spacer)); text-align: center; }
 
@@ -46,7 +51,7 @@ section { display: flex; flex-direction: column; align-items: center; justify-co
 .donate-foot { padding: 0; width: 100%; font-size: 14px; margin-top: 20px; }
 .donate hr { width: 100%; color: var(--color-font); }
 
-.who .team-member { border: 2px solid var(--color-font); margin: 40px; width: 250px; height: 250px; border-radius: 50%; overflow: hidden; position: relative; }
+.who .team-member { margin: 40px; width: 350px; height: 350px; border-radius: 50%; overflow: hidden; position: relative; }
 .who .team-member-image { width: 100%; position: absolute; }
 .who .team-member-detail { background: rgba(10, 58, 107, 0.6); color: #d8d7d7; position: absolute; bottom: 0; left: 0; width: 100%; height: 30%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .who .team-member-detail-name { font-size: 16px; font-weight: 700; }
