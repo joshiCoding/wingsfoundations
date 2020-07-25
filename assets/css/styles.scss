@@ -54,7 +54,7 @@ header{
         display:flex;
         justify-content:space-between;
         align-items:center;
-        width:25%;
+        width:30%;
         margin-right: var(--spacer);
 
         .head-btn{
@@ -63,11 +63,13 @@ header{
             padding:7px 12px;
             border-radius:10px;
             color:var(--color-font-light);
-            font-size:20px;
-        }
+            font-size:16px;
 
+        }
+       
         .hamburger-menu-options{
             display:none;
+          
         }
     }
 }
@@ -103,7 +105,7 @@ section{
         &-head{
             // border:2px solid red;
             width:68%;
-            font-size:50px;
+            font-size:40px;
             position:relative;
             margin:20px;
             &::before{
@@ -118,12 +120,12 @@ section{
         }
         &-moto{
             width:85%;
-            font-size:22px;
+            font-size:16px;
         }
         &-para{
             width:85%;
             margin:20px;
-            font-size:18px;
+            font-size:16px;
             font-weight:400;
         }
         &-btn{
@@ -133,7 +135,7 @@ section{
             color:var(--color-font-light);
             padding:10px 15px;
             margin-top:20px;
-            font-size:20px;
+            font-size:16px;
         }
     }
     img{
@@ -163,18 +165,18 @@ section{
 .who,
 .memories{
     &-head{
-        font-size:45px;
+        font-size:40px;
         font-weight:700;
     }
     &-tagline{
-        font-size:25px;
+        font-size:20px;
         font-weight:500;
         margin-bottom:20px;
     }
     &-para{
         padding:20px 15px;
         // border:2px solid red;
-        font-size:18px;
+        font-size:16px;
         b{
             font-weight:600;
         }        
@@ -185,7 +187,7 @@ section{
         border-radius:10px;
         padding:10px 25px;
         color:var(--color-font-light);
-        font-size:20px;
+        font-size:18px;
     }
 }
 
@@ -197,13 +199,12 @@ section{
         align-items:center;
         margin:10px;
         &-head{
-            font-size:18px;
+            font-size:16px;
             font-weight:700;
         }
         &-circle{
             width:350px;
             height:350px;
-            // border:2px solid var(--color-font);
             border-radius:50%;
             margin:30px;
             flex-shrink:none;
@@ -216,7 +217,7 @@ section{
         }
         &-para{
             padding:10px 35px;
-            font-size:18px;
+            font-size:14px;
         }
     }
     &-box-1{
@@ -239,13 +240,13 @@ section{
     margin:20px 30px;
     align-items:flex-start;
     &-head{
-        font-size:30px;
+        font-size:26px;
         margin-bottom:20px;
         width:100%;
     }
     &-para{
         padding:20px 5px;
-        font-size:18px;
+        font-size:14px;
         text-align:left;
         b{
             font-weight:600;
@@ -257,11 +258,12 @@ section{
         text-align:left;
         margin:20px 10px;
         &-head{
-            font-size:20px;
+            font-size:16px;
             font-weight:600;
         }
         &-content{
             padding:8px;
+            font-size:14px;
         }
     }
     &-foot{
@@ -303,11 +305,11 @@ section{
             align-items:center;
             justify-content:center;
             &-name{
-                font-size:18px;
+                font-size:16px;
                 font-weight:700;
             }
             &-roll{
-                font-size:14px;
+                font-size:12px;
             }
         }
     }
@@ -342,7 +344,7 @@ section{
         }
         &-description{
             padding:10px;
-            font-size:20px;
+            font-size:16px;
         }
     }
     &-btn{
@@ -354,7 +356,7 @@ section{
     align-items:flex-start;
     text-align:left;
     &-head{
-        font-size:40px;
+        font-size:38px;
         margin-bottom:20px;
         width:100%;
         text-align:center;
@@ -362,7 +364,7 @@ section{
     &-info{
         margin:10px;
         &-head{
-            font-size:23px;
+            font-size:20px;
             font-weight:600;
         }
         &-content{

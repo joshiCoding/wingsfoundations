@@ -7,63 +7,63 @@ body { background: lightblue; font-family: 'Roboto', sans-serif; font-family: 'M
 header { background: var(--color-background); overflow: hidden; width: 100%; height: 80px; display: flex; flex-direction: row; align-items: center; justify-content: space-between; }
 header .logo { margin-left: var(--spacer); width: 60px; height: 40px; }
 header .logo img { width: 100%; }
-header nav { display: flex; justify-content: space-between; align-items: center; width: 25%; margin-right: var(--spacer); }
-header nav .head-btn { border: none; background: var(--color-btn); padding: 7px 12px; border-radius: 10px; color: var(--color-font-light); font-size: 20px; }
+header nav { display: flex; justify-content: space-between; align-items: center; width: 30%; margin-right: var(--spacer); }
+header nav .head-btn { border: none; background: var(--color-btn); padding: 7px 12px; border-radius: 10px; color: var(--color-font-light); font-size: 16px; }
 header nav .hamburger-menu-options { display: none; }
 
 section { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: calc( 2 * var(--spacer)); text-align: center; }
 
 .hero { height: 120vh; justify-content: flex-start; background: var(--gradient-hero); position: relative; overflow: hidden; }
 .hero-content { text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; height: 70%; }
-.hero-content-head { width: 68%; font-size: 50px; position: relative; margin: 20px; }
+.hero-content-head { width: 68%; font-size: 40px; position: relative; margin: 20px; }
 .hero-content-head::before { content: ''; position: absolute; width: 120%; height: 2px; background: black; bottom: -10%; left: -10%; }
-.hero-content-moto { width: 85%; font-size: 22px; }
-.hero-content-para { width: 85%; margin: 20px; font-size: 18px; font-weight: 400; }
-.hero-content-btn { border: none; border-radius: 10px; background: var(--color-btn); color: var(--color-font-light); padding: 10px 15px; margin-top: 20px; font-size: 20px; }
+.hero-content-moto { width: 85%; font-size: 16px; }
+.hero-content-para { width: 85%; margin: 20px; font-size: 16px; font-weight: 400; }
+.hero-content-btn { border: none; border-radius: 10px; background: var(--color-btn); color: var(--color-font-light); padding: 10px 15px; margin-top: 20px; font-size: 16px; }
 .hero img { width: 100vw; position: absolute; top: 20%; left: 0; z-index: -10; align-self: center; justify-self: center; }
 
-.what-head, .why-head, .who-head, .memories-head { font-size: 45px; font-weight: 700; }
-.what-tagline, .why-tagline, .who-tagline, .memories-tagline { font-size: 25px; font-weight: 500; margin-bottom: 20px; }
-.what-para, .why-para, .who-para, .memories-para { padding: 20px 15px; font-size: 18px; }
+.what-head, .why-head, .who-head, .memories-head { font-size: 40px; font-weight: 700; }
+.what-tagline, .why-tagline, .who-tagline, .memories-tagline { font-size: 20px; font-weight: 500; margin-bottom: 20px; }
+.what-para, .why-para, .who-para, .memories-para { padding: 20px 15px; font-size: 16px; }
 .what-para b, .why-para b, .who-para b, .memories-para b { font-weight: 600; }
-.what-btn, .why-btn, .who-btn, .memories-btn { background: var(--color-btn); border: none; border-radius: 10px; padding: 10px 25px; color: var(--color-font-light); font-size: 20px; }
+.what-btn, .why-btn, .who-btn, .memories-btn { background: var(--color-btn); border: none; border-radius: 10px; padding: 10px 25px; color: var(--color-font-light); font-size: 18px; }
 
 .why-box { width: 80vw; display: flex; flex-direction: column; align-items: center; margin: 10px; }
-.why-box-head { font-size: 18px; font-weight: 700; }
+.why-box-head { font-size: 16px; font-weight: 700; }
 .why-box-circle { width: 350px; height: 350px; border-radius: 50%; margin: 30px; flex-shrink: none; overflow: hidden; position: relative; }
 .why-box-circle img { height: 100%; position: absolute; }
-.why-box-para { padding: 10px 35px; font-size: 18px; }
+.why-box-para { padding: 10px 35px; font-size: 14px; }
 .why-box-1 img { bottom: 0; right: -10%; }
 .why-box-2 img { bottom: 0; right: -30%; }
 
 .donate { border: 2px solid var(--color-font); border-radius: 20px; margin: 20px 30px; align-items: flex-start; }
-.donate-head { font-size: 30px; margin-bottom: 20px; width: 100%; }
-.donate-para { padding: 20px 5px; font-size: 18px; text-align: left; }
+.donate-head { font-size: 26px; margin-bottom: 20px; width: 100%; }
+.donate-para { padding: 20px 5px; font-size: 14px; text-align: left; }
 .donate-para b { font-weight: 600; }
 .donate-action { text-align: left; margin: 20px 10px; }
-.donate-action-head { font-size: 20px; font-weight: 600; }
-.donate-action-content { padding: 8px; }
+.donate-action-head { font-size: 16px; font-weight: 600; }
+.donate-action-content { padding: 8px; font-size: 14px; }
 .donate-foot { padding: 0; width: 100%; font-size: 14px; margin-top: 20px; }
 .donate hr { width: 100%; color: var(--color-font); }
 
 .who .team-member { border: 2px solid var(--color-font); margin: 40px; width: 250px; height: 250px; border-radius: 50%; overflow: hidden; position: relative; }
 .who .team-member-image { width: 100%; position: absolute; }
 .who .team-member-detail { background: rgba(10, 58, 107, 0.6); color: #d8d7d7; position: absolute; bottom: 0; left: 0; width: 100%; height: 30%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-.who .team-member-detail-name { font-size: 18px; font-weight: 700; }
-.who .team-member-detail-roll { font-size: 14px; }
+.who .team-member-detail-name { font-size: 16px; font-weight: 700; }
+.who .team-member-detail-roll { font-size: 12px; }
 .who .team-member-1 .team-member-image { bottom: -10%; right: 0; }
 .who .team-member-2 .team-member-image { bottom: -55%; right: 0; width: 150%; }
 .who-btn { margin: 30px; margin-top: 40px; }
 
 .memories .memory { width: 100%; max-width: 600px; margin: 20px; }
 .memories .memory-img { border: 2px solid var(--color-font); width: 90%; }
-.memories .memory-description { padding: 10px; font-size: 20px; }
+.memories .memory-description { padding: 10px; font-size: 16px; }
 .memories-btn { margin-top: 30px; }
 
 .contact { align-items: flex-start; text-align: left; }
-.contact-head { font-size: 40px; margin-bottom: 20px; width: 100%; text-align: center; }
+.contact-head { font-size: 38px; margin-bottom: 20px; width: 100%; text-align: center; }
 .contact-info { margin: 10px; }
-.contact-info-head { font-size: 23px; font-weight: 600; }
+.contact-info-head { font-size: 20px; font-weight: 600; }
 .contact-info-content { margin: 10px 18px; }
 .contact-info-content li { margin: 8px 0; }
 
