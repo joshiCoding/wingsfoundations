@@ -64,6 +64,10 @@ header{
             border-radius:10px;
             color:var(--color-font-light);
             font-size:16px;
+            a{
+                text-decoration:none;
+                color:var(--color-font-light);
+            }
 
         }
        
@@ -175,6 +179,10 @@ section{
             padding:10px 15px;
             margin-top:20px;
             font-size:16px;
+            a{
+                text-decoration:none;
+                color:var(--color-font-light);
+            }
         }
     }
     img{
@@ -227,6 +235,10 @@ section{
         padding:10px 25px;
         color:var(--color-font-light);
         font-size:18px;
+        a{
+            text-decoration:none;
+            color:var(--color-font-light);
+        }
     }
 }
 

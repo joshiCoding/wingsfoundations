@@ -9,6 +9,7 @@ header .logo { margin-left: var(--spacer); width: 60px; height: 40px; }
 header .logo img { width: 100%; }
 header nav { display: flex; justify-content: space-between; align-items: center; width: 30%; margin-right: var(--spacer); }
 header nav .head-btn { border: none; background: var(--color-btn); padding: 7px 12px; border-radius: 10px; color: var(--color-font-light); font-size: 16px; }
+header nav .head-btn a { text-decoration: none; color: var(--color-font-light); }
 header nav .hamburger-menu-options { overflow: hidden; position: fixed; top: 0; right: 0; list-style-type: none; width: 0; height: 100vh; z-index: 100; background: var(--color-background); display: flex; flex-direction: column; transition: width 150ms linear; }
 header nav .hamburger-menu-options .hamburger-close-btn { text-align: right; width: 20%; align-self: flex-end; }
 header nav .hamburger-menu-options li { padding: 20px; width: 100%; }
@@ -25,6 +26,7 @@ section { display: flex; flex-direction: column; align-items: center; justify-co
 .hero-content-moto { width: 85%; font-size: 16px; }
 .hero-content-para { width: 85%; margin: 20px; font-size: 16px; font-weight: 400; }
 .hero-content-btn { border: none; border-radius: 10px; background: var(--color-btn); color: var(--color-font-light); padding: 10px 15px; margin-top: 20px; font-size: 16px; }
+.hero-content-btn a { text-decoration: none; color: var(--color-font-light); }
 .hero img { width: 100vw; position: absolute; top: 20%; left: 0; z-index: -10; align-self: center; justify-self: center; }
 
 .what-head, .why-head, .who-head, .memories-head { font-size: 40px; font-weight: 700; }
@@ -32,6 +34,7 @@ section { display: flex; flex-direction: column; align-items: center; justify-co
 .what-para, .why-para, .who-para, .memories-para { padding: 20px 15px; font-size: 16px; }
 .what-para b, .why-para b, .who-para b, .memories-para b { font-weight: 600; }
 .what-btn, .why-btn, .who-btn, .memories-btn { background: var(--color-btn); border: none; border-radius: 10px; padding: 10px 25px; color: var(--color-font-light); font-size: 18px; }
+.what-btn a, .why-btn a, .who-btn a, .memories-btn a { text-decoration: none; color: var(--color-font-light); }
 
 .why-box { width: 80vw; display: flex; flex-direction: column; align-items: center; margin: 10px; }
 .why-box-head { font-size: 16px; font-weight: 700; }

@@ -18,3 +18,13 @@ menuCloseBtn.addEventListener('click', e=>{
     menu.classList.remove('hamburger-menu-options-open');
     
 })
+
+
+//------ for smooth scroll function 
+// on smooth-scroll class
+
+var scroll = new SmoothScroll('.smooth-scroll', {
+    speed:600,
+    updateURL:false,
+    offset:40
+});
