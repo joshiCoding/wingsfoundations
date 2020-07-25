@@ -5,14 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ site.title }} | Team</title>
     {% include head.html %}
+
+    <link rel="stylesheet" href='{{"/assets/css/team.css" | absolute_url }}'>
 </head>
 <body>
     {% include header.html %}
 
 
-    <section>
-        
+    <section class="team">
+        <div class="team-member">
+            <div class="team-member-image">
+                <img src="{{ '/assets/images/ngo-president-min.jpg' | absolute_url }}" alt=""> 
+            </div>
+            <div class="team-member-detail">
+                <h2 class ="team-member-detail-name">Farhaan Habeb</h2>
+                <p  class ="team-member-detail-para"> A dedicated teacher with more than 7 years of experience in teaching industry. Have been continuously associated with reputed school and colleges. Experienced in student hadling and curriculum design. </p>
+                <ul class ="team-member-detail-qualification">
+                    <li>Msc Mathematics</li>
+                    <li>MA History</li>
+                    <li>President - NGO Wings Foundation</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="team-member">
+            <div class="team-member-image">
+                <img src="{{ '/assets/images/ngo-manager-min.jpg' | absolute_url }}" alt=""> 
+            </div>
+            <div class="team-member-detail">
+                <h2 class ="team-member-detail-name">Vishal Pandey</h2>
+                <p class ="team-member-detail-para"> A dedicated teacher with more than 7 years of experience in teaching industry. Have been continuously associated with reputed school and colleges. Experienced in student hadling and curriculum design. </p>
+                <ul  class ="team-member-detail-qualification">
+                    <li>MA History</li>
+                    <li>Manager - NGO Wings Foundation</li>
+                    <li>Treasurer - NGO Wings Foundation </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="team-member no-image">
+            <!-- <div class="team-member-image">img</div> -->
+            <div class="team-member-detail">
+                <h2 class ="team-member-detail-name">Pooja Saroj</h2>
+                <p  class ="team-member-detail-para"> A dedicated teacher with more than 7 years of experience in teaching industry. Have been continuously associated with reputed school and colleges. Experienced in student hadling and curriculum design. </p>
+                <ul class ="team-member-detail-qualification">
+                    <li>Vice President - NGO Wings Foundation</li>
+                </ul>
+            </div>
+        </div>
+        <div class="team-member no-image">
+            <!-- <div class="team-member-image">img</div> -->
+            <div class="team-member-detail">
+                <h2 class ="team-member-detail-name">Nadeem Arshad</h2>
+                <p   class ="team-member-detail-para"> A dedicated teacher with more than 7 years of experience in teaching industry. Have been continuously associated with reputed school and colleges. Experienced in student hadling and curriculum design. </p>
+                <ul class ="team-member-detail-qualification">
+                    <li>Seceratory - NGO Wings Foundation</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="team-member no-image">
+            <!-- <div class="team-member-image">img</div> -->
+            <div class="team-member-detail">
+                <h2 class ="team-member-detail-name">Shoaib Ahmad</h2>
+                <p   class ="team-member-detail-para"> A dedicated teacher with more than 7 years of experience in teaching industry. Have been continuously associated with reputed school and colleges. Experienced in student hadling and curriculum design. </p>
+                <ul class ="team-member-detail-qualification">
+                    <li>Member - NGO Wings Foundation</li>
+                </ul>
+            </div>
+        </div>
+        <div class="team-member no-image">
+            <!-- <div class="team-member-image">img</div> -->
+            <div class="team-member-detail">
+                <h2 class ="team-member-detail-name">Sadiya Khan</h2>
+                <p  class ="team-member-detail-para"> A dedicated teacher with more than 7 years of experience in teaching industry. Have been continuously associated with reputed school and colleges. Experienced in student hadling and curriculum design. </p>
+                <ul class ="team-member-detail-qualification">
+                    <li>Member - NGO Wings Foundation</li>
+                </ul>
+            </div>
+        </div>
+        <div class="team-member no-image">
+            <!-- <div class="team-member-image">img</div> -->
+            <div class="team-member-detail">
+                <h2  class ="team-member-detail-name">Nishtha Mehrotra</h2>
+                <p class ="team-member-detail-para"> A dedicated teacher with more than 7 years of experience in teaching industry. Have been continuously associated with reputed school and colleges. Experienced in student hadling and curriculum design. </p>
+                <ul class ="team-member-detail-qualification">
+                    <li>Member - NGO Wings Foundation</li>
+                </ul>
+            </div>
+        </div>
+
     </section>
+
+    {% include contact.html %}
 
     {% include footer.html %}
 </body>
