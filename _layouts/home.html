@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="logo">
-            logo
+            <img src="{{ '/assets/images/wings-foundation-logo.png' | absolute_url}}" alt="">
         </div>
 
        
@@ -22,7 +22,7 @@
         <nav class="hamburger-menu">
             <button class="head-btn">Donate</button>
             <div class="hamburger-btn">
-                |||
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
             </div>
             <ul class="hamburger-menu-options">
                 <li>HOME</li>
@@ -35,13 +35,16 @@
 
 
     <section class="hero">
-        <h1 class="hero-head">Wings Foundation</h1>
-        <h4 class="hero-moto">Bringing education to all those who need it the most</h4>
-        <p class="hero-description">
-            Launching for the first time in Lucknow with the aim to empower the weakest section of the society with the right to better education without monetory advantage
-        </p>
-        <button class="hero-btn">Contact Now</button>
-        <div class="hero-img">img</div>
+        <div class="hero-content">
+            <h1 class="hero-content-head">Wings Foundation</h1>
+            <h4 class="hero-content-moto">Bringing education to all those who need it the most</h4>
+            <p class="hero-content-para">
+                Launching for the first time in Lucknow with the aim to empower the weakest section of the society with the right to better education without monetory advantage
+            </p>
+            <button class="hero-content-btn">Contact Now</button>
+        </div>    
+
+        <img src="{{ '/assets/images/hero-img.jpg' | absolute_url}}" alt="">
     </section>
 
 
@@ -70,7 +73,9 @@
 
         <div class="why-box why-box-1">
             <h4 class="why-box-head">India rank 168 among 234 countries in the literarcy rate</h4>
-            <div class="why-box-circle"></div>
+            <div class="why-box-circle">
+                <img src="{{ '/assets/images/globe-img.jpg' | absolute_url }}" alt="">
+            </div>
             <p class="why-box-para">
                 Our aim is to start locally to give the education to the one who deserve it the most.
             </p>
@@ -78,7 +83,9 @@
 
         <div class="why-box why-box-2">
             <h4 class="why-box-head">3 out of 10 children in India do not get their right of education</h4>
-            <div class="why-box-circle"></div>
+            <div class="why-box-circle">
+                <img src="{{ '/assets/images/child-img.jpg' | absolute_url }}" alt="">
+            </div>
             <p class="why-box-para">
                 Even one child is valuable for us because their future is the progress of our country.
             </p>
@@ -128,15 +135,15 @@
             We are selfless team of <b>dedicated teachers and professionals from various field</b> that come together to create an enriching environment for child's overall growth and providing quality education.
         </p>
 
-        <div class="team-member">
-            <img src="" alt="" class="team-member-image">
+        <div class="team-member team-member-1">
+            <img src="{{ '/assets/images/ngo-president.jpg' | absolute_url }}" alt="" class="team-member-image">
             <div class="team-member-detail">
                 <h5 class="team-member-detail-name">Farhan Habeb</h5>
                 <p class="team-member-detail-roll">NGO-President</p>
             </div>
         </div>
-        <div class="team-member">
-            <img src="" alt="" class="team-member-image">
+        <div class="team-member team-member-2">
+            <img src="{{ '/assets/images/ngo-manager.jpg' | absolute_url }}" alt="" class="team-member-image">
             <div class="team-member-detail">
                 <h5 class="team-member-detail-name">Vishal Pandey</h5>
                 <p class="team-member-detail-roll">NGO-Manager</p>
@@ -151,12 +158,12 @@
         <h2 class="memories-head">Memories</h2>
 
         <div class="memory">
-            <img src="" alt="" class="memory-img">
+            <img src="{{ '/assets/images/memory-1.JPG' | absolute_url }}" alt="" class="memory-img">
             <p class="memory-description">Inaugration function Photo-1</p>
         </div>
 
         <div class="memory">
-            <img src="" alt="" class="memory-img">
+            <img src="{{ '/assets/images/memory-2.JPG' | absolute_url }}" alt="" class="memory-img">
             <p class="memory-description">Inaugration function Photo-2</p>
         </div>
 

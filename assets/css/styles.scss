@@ -12,7 +12,7 @@
     --color-footer-font:#287C9B;
     --color-font-light:#fff;
     --color-dark-opacity:rgba(107, 111, 115, 0.3);
-    --gradient-hero:linear-gradient(180deg, #FFF7F9 0%, #FFF6F9 47.28%, rgba(107, 111, 115, 0.6) 68.34%, rgba(34, 45, 49, 0) 100%);
+    --gradient-hero:linear-gradient(180deg, #FFF7F9 0%, #FFF6F9 27.28%, rgba(107, 111, 115, 0.6) 48.34%, rgba(34, 45, 49, 0) 100%);
 
 
 }
@@ -44,8 +44,11 @@ header{
     justify-content:space-between;
     .logo{
         margin-left:var(--spacer);
-        width:40px;
+        width:60px;
         height:40px;
+        img{
+            width:100%;
+        }
     }
     nav{
         display:flex;
@@ -83,46 +86,70 @@ section{
 
 //hero
 .hero{
-    height:calc(100vh - 80px);
-    justify-content:space-between;
+    height:120vh;
+    justify-content:flex-start;
     background:var(--gradient-hero);
-    &-head{
-        width:55%;
-        font-size:35px;
-        position:relative;
-        margin:calc(2 * var(--spacer));
-        &::before{
-            content:'';
-            position:absolute;
-            width:140%;
-            height:2px;
-            background:black;
-            bottom:-20%;
-            left:-20%;
+    position:relative;
+    overflow:hidden;
+    &-content{
+        // border:2px solid red;
+        text-align:center;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        height:70%;
+        &-head{
+            width:55%;
+            font-size:35px;
+            position:relative;
+            margin:20px;
+            &::before{
+                content:'';
+                position:absolute;
+                width:140%;
+                height:2px;
+                background:black;
+                bottom:-10%;
+                left:-20%;
+            }
+        }
+        &-moto{
+            width:85%;
+        }
+        &-para{
+            width:85%;
+            margin:20px;
+        }
+        &-btn{
+            border:none;
+            border-radius:10px;
+            background:var(--color-btn);
+            color:var(--color-font-light);
+            padding:10px 15px;
+            margin-top:20px;
         }
     }
-    &-moto{
-        width:85%;
+    img{
+        width: 100vw;
+        position:absolute;
+        top:20%;
+        left:0;
+        z-index:-10;
+        align-self:center;
+        justify-self:center;
+        
     }
-    &-description{
-        width:85%;
-    }
-    &-btn{
-        border:none;
-        border-radius:10px;
-        background:var(--color-btn);
-        color:var(--color-font-light);
-        padding:10px 15px;
-        // position:absolute;
-        // top:50%;
-        // left:50%;
-        // transform:translate(-50%);
-        margin-top:20px;
-    }
-    &-img{
-        width:100vw;
-        height:50vw;
-    }
+    // &::after{
+    //     content:'';
+    //     position:absolute;
+    //     width:600px;
+    //     height:600px;
+    //     border:2px solid red;
+    //     bottom:0;
+    //     left:0;
+    //     background:url('{{ "/assets/images/hero-img.jpg" | absolute_url }}');
+    // }
 }
 
 .what,
@@ -174,11 +201,29 @@ section{
             border:2px solid var(--color-font);
             border-radius:50%;
             margin:30px;
-            // flex-shrink:none;
+            flex-shrink:none;
+            overflow:hidden;
+            position:relative;
+            img{
+                height:100%;
+                position:absolute;
+            }
         }
         &-para{
             padding:10px 35px;
             font-size:18px;
+        }
+    }
+    &-box-1{
+        img{
+            bottom:0;
+            right:-10%;
+        }
+    }
+    &-box-2{
+        img{
+            bottom:0;
+            right:-30%;
         }
     }
 }
@@ -236,8 +281,13 @@ section{
         border-radius:50%;
         overflow:hidden;
         position:relative;
+        &-image{
+            width:100%;
+            position:absolute;
+        }
         &-detail{
-            background:rgba(107, 111, 115, 0.3);
+            background:rgba(10, 58, 107, 0.6);
+            color:rgb(216, 215, 215);
             position:absolute;
             bottom:0;
             left:0;
@@ -256,6 +306,20 @@ section{
             }
         }
     }
+    .team-member-1{
+        .team-member-image{
+            bottom:-10%;
+            right:0;
+        }
+    }
+    .team-member-2{
+        .team-member-image{
+            bottom:-55%;
+            right:0;
+            width:150%;
+        }
+        
+    }
     &-btn{
         margin:30px;
         margin-top:40px;
@@ -265,11 +329,11 @@ section{
 .memories{
     .memory{
         width:100%;
+        max-width:600px;
         margin:20px;
         &-img{
             border:2px solid var(--color-font);
             width:90%;
-            height:300px;
         }
     }
     &-btn{
