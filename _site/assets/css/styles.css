@@ -8,29 +8,29 @@ header { background: var(--color-background); overflow: hidden; width: 100%; hei
 header .logo { margin-left: var(--spacer); width: 60px; height: 40px; }
 header .logo img { width: 100%; }
 header nav { display: flex; justify-content: space-between; align-items: center; width: 25%; margin-right: var(--spacer); }
-header nav .head-btn { border: none; background: var(--color-btn); padding: 7px 12px; border-radius: 10px; color: var(--color-font-light); }
+header nav .head-btn { border: none; background: var(--color-btn); padding: 7px 12px; border-radius: 10px; color: var(--color-font-light); font-size: 20px; }
 header nav .hamburger-menu-options { display: none; }
 
 section { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: calc( 2 * var(--spacer)); text-align: center; }
 
 .hero { height: 120vh; justify-content: flex-start; background: var(--gradient-hero); position: relative; overflow: hidden; }
 .hero-content { text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; height: 70%; }
-.hero-content-head { width: 55%; font-size: 35px; position: relative; margin: 20px; }
-.hero-content-head::before { content: ''; position: absolute; width: 140%; height: 2px; background: black; bottom: -10%; left: -20%; }
-.hero-content-moto { width: 85%; }
-.hero-content-para { width: 85%; margin: 20px; }
-.hero-content-btn { border: none; border-radius: 10px; background: var(--color-btn); color: var(--color-font-light); padding: 10px 15px; margin-top: 20px; }
+.hero-content-head { width: 68%; font-size: 50px; position: relative; margin: 20px; }
+.hero-content-head::before { content: ''; position: absolute; width: 120%; height: 2px; background: black; bottom: -10%; left: -10%; }
+.hero-content-moto { width: 85%; font-size: 22px; }
+.hero-content-para { width: 85%; margin: 20px; font-size: 18px; font-weight: 400; }
+.hero-content-btn { border: none; border-radius: 10px; background: var(--color-btn); color: var(--color-font-light); padding: 10px 15px; margin-top: 20px; font-size: 20px; }
 .hero img { width: 100vw; position: absolute; top: 20%; left: 0; z-index: -10; align-self: center; justify-self: center; }
 
-.what-head, .why-head, .who-head, .memories-head { font-size: 35px; font-weight: 700; }
-.what-tagline, .why-tagline, .who-tagline, .memories-tagline { font-size: 20px; font-weight: 500; margin-bottom: 20px; }
+.what-head, .why-head, .who-head, .memories-head { font-size: 45px; font-weight: 700; }
+.what-tagline, .why-tagline, .who-tagline, .memories-tagline { font-size: 25px; font-weight: 500; margin-bottom: 20px; }
 .what-para, .why-para, .who-para, .memories-para { padding: 20px 15px; font-size: 18px; }
 .what-para b, .why-para b, .who-para b, .memories-para b { font-weight: 600; }
-.what-btn, .why-btn, .who-btn, .memories-btn { background: var(--color-btn); border: none; border-radius: 10px; padding: 10px 15px; color: var(--color-font-light); font-size: 20px; }
+.what-btn, .why-btn, .who-btn, .memories-btn { background: var(--color-btn); border: none; border-radius: 10px; padding: 10px 25px; color: var(--color-font-light); font-size: 20px; }
 
 .why-box { width: 80vw; display: flex; flex-direction: column; align-items: center; margin: 10px; }
 .why-box-head { font-size: 18px; font-weight: 700; }
-.why-box-circle { width: 250px; height: 250px; border: 2px solid var(--color-font); border-radius: 50%; margin: 30px; flex-shrink: none; overflow: hidden; position: relative; }
+.why-box-circle { width: 350px; height: 350px; border-radius: 50%; margin: 30px; flex-shrink: none; overflow: hidden; position: relative; }
 .why-box-circle img { height: 100%; position: absolute; }
 .why-box-para { padding: 10px 35px; font-size: 18px; }
 .why-box-1 img { bottom: 0; right: -10%; }
@@ -57,6 +57,7 @@ section { display: flex; flex-direction: column; align-items: center; justify-co
 
 .memories .memory { width: 100%; max-width: 600px; margin: 20px; }
 .memories .memory-img { border: 2px solid var(--color-font); width: 90%; }
+.memories .memory-description { padding: 10px; font-size: 20px; }
 .memories-btn { margin-top: 30px; }
 
 .contact { align-items: flex-start; text-align: left; }

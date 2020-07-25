@@ -63,6 +63,7 @@ header{
             padding:7px 12px;
             border-radius:10px;
             color:var(--color-font-light);
+            font-size:20px;
         }
 
         .hamburger-menu-options{
@@ -100,26 +101,30 @@ section{
         justify-content:flex-start;
         height:70%;
         &-head{
-            width:55%;
-            font-size:35px;
+            // border:2px solid red;
+            width:68%;
+            font-size:50px;
             position:relative;
             margin:20px;
             &::before{
                 content:'';
                 position:absolute;
-                width:140%;
+                width:120%;
                 height:2px;
                 background:black;
                 bottom:-10%;
-                left:-20%;
+                left:-10%;
             }
         }
         &-moto{
             width:85%;
+            font-size:22px;
         }
         &-para{
             width:85%;
             margin:20px;
+            font-size:18px;
+            font-weight:400;
         }
         &-btn{
             border:none;
@@ -128,6 +133,7 @@ section{
             color:var(--color-font-light);
             padding:10px 15px;
             margin-top:20px;
+            font-size:20px;
         }
     }
     img{
@@ -157,11 +163,11 @@ section{
 .who,
 .memories{
     &-head{
-        font-size:35px;
+        font-size:45px;
         font-weight:700;
     }
     &-tagline{
-        font-size:20px;
+        font-size:25px;
         font-weight:500;
         margin-bottom:20px;
     }
@@ -177,7 +183,7 @@ section{
         background:var(--color-btn);
         border:none;
         border-radius:10px;
-        padding:10px 15px;
+        padding:10px 25px;
         color:var(--color-font-light);
         font-size:20px;
     }
@@ -185,7 +191,6 @@ section{
 
 .why{
     &-box{
-        // border:2px solid red;
         width:80vw;
         display:flex;
         flex-direction:column;
@@ -196,9 +201,9 @@ section{
             font-weight:700;
         }
         &-circle{
-            width:250px;
-            height:250px;
-            border:2px solid var(--color-font);
+            width:350px;
+            height:350px;
+            // border:2px solid var(--color-font);
             border-radius:50%;
             margin:30px;
             flex-shrink:none;
@@ -334,6 +339,10 @@ section{
         &-img{
             border:2px solid var(--color-font);
             width:90%;
+        }
+        &-description{
+            padding:10px;
+            font-size:20px;
         }
     }
     &-btn{
