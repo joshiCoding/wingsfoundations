@@ -464,3 +464,121 @@ footer{
         }
     }
 }
+
+@media only screen and (min-width : 600px ){
+
+    header{
+        nav{
+            .head-btn{
+                font-size:20px;
+            }
+        }
+        .hamburger-menu{
+            width:150px;
+        }
+        
+    }
+    .hero{
+        &-content{
+            &-head{
+                font-size:50px;
+            }
+            &-moto{
+                font-size:20px;
+            }
+            &-para{
+                font-size:20px;
+            }
+            &-btn{
+                font-size:20px;
+            }    
+        }
+        
+    }
+}
+
+@media only screen and (min-width : 700px){
+    .container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        width:100vw;
+    }
+    .hero{
+        width:100%;
+        &-content{
+            width: 600px;
+           
+        }
+    }
+    .what,
+    .why,
+    .who,
+    .memories,
+    .donate,
+    .contact{
+        &-head{
+            font-size:45px;
+        }
+        &-tagline{
+            font-size:25px;
+        }
+        &-para{
+            font-size:20px;
+        }
+    }
+    .what{
+        width:700px;
+    }
+    .why{
+        width:100%;
+        &-box{
+            width:400px;
+            display:inline-flex;
+            &-head{
+                font-size:22px;
+            }
+            &-para{
+                font-size:20px;
+            }
+        }
+    }
+    .donate{
+        width:700px;
+        &-action{
+            &-head{
+                font-size:22px;
+            }
+            &-content{
+                font-size:20px;
+            }
+        }
+        &-foot{
+            font-size:18px;
+        }
+    }
+    
+    .who{
+        width:800px;
+        .team-member{
+            display:inline-flex;
+            width:250px;
+            height:250px;
+        }
+    }
+    .contact{
+        width:700px;
+        &-info{
+            &-head{
+                font-size:20px;
+            }
+            &-content{
+                font-size:18px;
+            }
+        }
+    }
+    footer{
+        width:100%;
+    }
+}

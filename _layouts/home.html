@@ -5,7 +5,7 @@
   {% include head.html %}
 </head>
 <body>
-
+<div class="container">
     {% include header.html %}
     
 
@@ -51,6 +51,7 @@
         <h2 class="why-head">Why we Exist?</h2>
         <h4 class="why-tagline">We Exist Because</h4>
 
+        <div class="box-container">
         <div class="why-box why-box-1">
             <h4 class="why-box-head">India rank 168 among 234 countries in the literarcy rate</h4>
             <div class="why-box-circle">
@@ -70,6 +71,7 @@
                 Even one child is valuable for us because their future is the progress of our country.
             </p>
         </div>
+    </div>
     </section>
     
     
@@ -114,7 +116,7 @@
         <p class="who-para">
             We are selfless team of <b>dedicated teachers and professionals from various field</b> that come together to create an enriching environment for child's overall growth and providing quality education.
         </p>
-
+        <div class="team-container">
         <div class="team-member team-member-1">
             <img src="{{ '/assets/images/ngo-president-min.jpg' | absolute_url }}" alt="" class="team-member-image">
             <div class="team-member-detail">
@@ -129,6 +131,7 @@
                 <p class="team-member-detail-roll">NGO-Manager</p>
             </div>
         </div>
+    </div>
 
         <button class="who-btn">
             <a href="{{ '/team.html' | absolute_url}}">Know Our Team</a>
@@ -157,6 +160,6 @@
    {% include contact.html %}
 
    {% include footer.html %}
-
+</div>
 </body>
 </html>

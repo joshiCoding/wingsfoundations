@@ -85,3 +85,31 @@ section { display: flex; flex-direction: column; align-items: center; justify-co
 footer { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; background: #555252; color: white; }
 footer p { width: 100%; padding: 10px; }
 footer p a { color: white; }
+
+@media only screen and (min-width: 600px) { header nav .head-btn { font-size: 20px; }
+  header .hamburger-menu { width: 150px; }
+  .hero-content-head { font-size: 50px; }
+  .hero-content-moto { font-size: 20px; }
+  .hero-content-para { font-size: 20px; }
+  .hero-content-btn { font-size: 20px; } }
+@media only screen and (min-width: 700px) { .container { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100vw; }
+  .hero { width: 100%; }
+  .hero-content { width: 600px; }
+  .what-head, .why-head, .who-head, .memories-head, .donate-head, .contact-head { font-size: 45px; }
+  .what-tagline, .why-tagline, .who-tagline, .memories-tagline, .donate-tagline, .contact-tagline { font-size: 25px; }
+  .what-para, .why-para, .who-para, .memories-para, .donate-para, .contact-para { font-size: 20px; }
+  .what { width: 700px; }
+  .why { width: 100%; }
+  .why-box { width: 400px; display: inline-flex; }
+  .why-box-head { font-size: 22px; }
+  .why-box-para { font-size: 20px; }
+  .donate { width: 700px; }
+  .donate-action-head { font-size: 22px; }
+  .donate-action-content { font-size: 20px; }
+  .donate-foot { font-size: 18px; }
+  .who { width: 800px; }
+  .who .team-member { display: inline-flex; width: 250px; height: 250px; }
+  .contact { width: 700px; }
+  .contact-info-head { font-size: 20px; }
+  .contact-info-content { font-size: 18px; }
+  footer { width: 100%; } }
