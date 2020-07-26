@@ -68,6 +68,13 @@ header{
                 text-decoration:none;
                 color:var(--color-font-light);
             }
+            &:hover{
+                background:transparent;
+                box-shadow: inset 0px 0px 0px 2px var(--color-font);
+                a{
+                    color:var(--color-font);
+                }
+            }
 
         }
        
@@ -185,6 +192,13 @@ section{
                 text-decoration:none;
                 color:var(--color-font-light);
             }
+            &:hover{
+                background:transparent;
+                box-shadow: inset 0px 0px 0px 2px var(--color-font);
+                a{
+                    color:var(--color-font);
+                }
+            }
         }
     }
     img{
@@ -197,16 +211,6 @@ section{
         justify-self:center;
         
     }
-    // &::after{
-    //     content:'';
-    //     position:absolute;
-    //     width:600px;
-    //     height:600px;
-    //     border:2px solid red;
-    //     bottom:0;
-    //     left:0;
-    //     background:url('{{ "/assets/images/hero-img.jpg" | absolute_url }}');
-    // }
 }
 
 .what,
@@ -240,6 +244,13 @@ section{
         a{
             text-decoration:none;
             color:var(--color-font-light);
+        }
+        &:hover{
+            background:transparent;
+            box-shadow: inset 0px 0px 0px 2px var(--color-font);
+            a{
+                color:var(--color-font);
+            }
         }
     }
 }
@@ -334,7 +345,6 @@ section{
 
 .who{
     .team-member{
-        // border:2px solid var(--color-font);
         margin:40px;
         width:350px;
         height:350px;
@@ -344,6 +354,7 @@ section{
         &-image{
             width:100%;
             position:absolute;
+            transition: transform 250ms linear;
         }
         &-detail{
             background:rgba(10, 58, 107, 0.6);
@@ -363,6 +374,12 @@ section{
             }
             &-roll{
                 font-size:12px;
+            }
+        }
+        &:hover{
+            .team-member-image{
+                transform:scale(1.2);
+               
             }
         }
     }

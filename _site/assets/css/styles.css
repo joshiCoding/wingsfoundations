@@ -10,6 +10,8 @@ header .logo img { width: 100%; }
 header nav { display: flex; justify-content: space-between; align-items: center; width: 30%; margin-right: var(--spacer); }
 header nav .head-btn { border: none; background: var(--color-btn); padding: 7px 12px; border-radius: 10px; color: var(--color-font-light); font-size: 16px; }
 header nav .head-btn a { text-decoration: none; color: var(--color-font-light); }
+header nav .head-btn:hover { background: transparent; box-shadow: inset 0px 0px 0px 2px var(--color-font); }
+header nav .head-btn:hover a { color: var(--color-font); }
 header nav .hamburger-menu-options { overflow: hidden; position: fixed; top: 0; right: 0; list-style-type: none; width: 0; height: 100vh; z-index: 100; background: var(--color-background); display: flex; flex-direction: column; transition: width 150ms linear; background: #b7b7f3; }
 header nav .hamburger-menu-options .hamburger-close-btn { text-align: right; width: 20%; align-self: flex-end; }
 header nav .hamburger-menu-options li { padding: 20px; width: 100%; }
@@ -27,6 +29,8 @@ section { display: flex; flex-direction: column; align-items: center; justify-co
 .hero-content-para { width: 85%; margin: 20px; font-size: 16px; font-weight: 400; }
 .hero-content-btn { border: none; border-radius: 10px; background: var(--color-btn); color: var(--color-font-light); padding: 10px 15px; margin-top: 20px; font-size: 16px; }
 .hero-content-btn a { text-decoration: none; color: var(--color-font-light); }
+.hero-content-btn:hover { background: transparent; box-shadow: inset 0px 0px 0px 2px var(--color-font); }
+.hero-content-btn:hover a { color: var(--color-font); }
 .hero img { width: 100vw; position: absolute; top: 20%; left: 0; z-index: -10; align-self: center; justify-self: center; }
 
 .what-head, .why-head, .who-head, .memories-head { font-size: 40px; font-weight: 700; }
@@ -35,6 +39,8 @@ section { display: flex; flex-direction: column; align-items: center; justify-co
 .what-para b, .why-para b, .who-para b, .memories-para b { font-weight: 600; }
 .what-btn, .why-btn, .who-btn, .memories-btn { background: var(--color-btn); border: none; border-radius: 10px; padding: 10px 25px; color: var(--color-font-light); font-size: 18px; }
 .what-btn a, .why-btn a, .who-btn a, .memories-btn a { text-decoration: none; color: var(--color-font-light); }
+.what-btn:hover, .why-btn:hover, .who-btn:hover, .memories-btn:hover { background: transparent; box-shadow: inset 0px 0px 0px 2px var(--color-font); }
+.what-btn:hover a, .why-btn:hover a, .who-btn:hover a, .memories-btn:hover a { color: var(--color-font); }
 
 .why-box { width: 80vw; display: flex; flex-direction: column; align-items: center; margin: 10px; }
 .why-box-head { font-size: 16px; font-weight: 700; }
@@ -55,10 +61,11 @@ section { display: flex; flex-direction: column; align-items: center; justify-co
 .donate hr { width: 100%; color: var(--color-font); }
 
 .who .team-member { margin: 40px; width: 350px; height: 350px; border-radius: 50%; overflow: hidden; position: relative; }
-.who .team-member-image { width: 100%; position: absolute; }
+.who .team-member-image { width: 100%; position: absolute; transition: transform 250ms linear; }
 .who .team-member-detail { background: rgba(10, 58, 107, 0.6); color: #d8d7d7; position: absolute; bottom: 0; left: 0; width: 100%; height: 30%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .who .team-member-detail-name { font-size: 16px; font-weight: 700; }
 .who .team-member-detail-roll { font-size: 12px; }
+.who .team-member:hover .team-member-image { transform: scale(1.2); }
 .who .team-member-1 .team-member-image { bottom: -10%; right: 0; }
 .who .team-member-2 .team-member-image { bottom: -55%; right: 0; width: 150%; }
 .who-btn { margin: 30px; margin-top: 40px; }
