@@ -32,7 +32,7 @@ body{
 }
 
 
-//layout
+//header
 header{
     background:var(--color-background);
     overflow:hidden;
@@ -84,6 +84,8 @@ header{
             display:flex;
             flex-direction:column;
             transition:width 150ms linear;
+            background:rgb(183, 183, 243);
+
 
             .hamburger-close-btn{
                 text-align:right;

@@ -10,7 +10,7 @@ header .logo img { width: 100%; }
 header nav { display: flex; justify-content: space-between; align-items: center; width: 30%; margin-right: var(--spacer); }
 header nav .head-btn { border: none; background: var(--color-btn); padding: 7px 12px; border-radius: 10px; color: var(--color-font-light); font-size: 16px; }
 header nav .head-btn a { text-decoration: none; color: var(--color-font-light); }
-header nav .hamburger-menu-options { overflow: hidden; position: fixed; top: 0; right: 0; list-style-type: none; width: 0; height: 100vh; z-index: 100; background: var(--color-background); display: flex; flex-direction: column; transition: width 150ms linear; }
+header nav .hamburger-menu-options { overflow: hidden; position: fixed; top: 0; right: 0; list-style-type: none; width: 0; height: 100vh; z-index: 100; background: var(--color-background); display: flex; flex-direction: column; transition: width 150ms linear; background: #b7b7f3; }
 header nav .hamburger-menu-options .hamburger-close-btn { text-align: right; width: 20%; align-self: flex-end; }
 header nav .hamburger-menu-options li { padding: 20px; width: 100%; }
 header nav .hamburger-menu-options li a { text-decoration: none; color: var(--color-font); font-weight: 600; font-size: 0; }
