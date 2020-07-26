@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ site.title }} | Team</title>
     {% include head.html %}
 
@@ -10,9 +8,11 @@
 </head>
 <body>
     {% include header.html %}
-
+<div class="container">
 
     <section class="team">
+        <h1 class="team-member-head">Our Team Comprises of </h1>
+
         <div class="team-member">
             <div class="team-member-image">
                 <img src="{{ '/assets/images/ngo-president-min.jpg' | absolute_url }}" alt=""> 
@@ -96,9 +96,10 @@
         </div>
 
     </section>
+    {% include donate.html %}
 
     {% include contact.html %}
-
+</div>
     {% include footer.html %}
 </body>
 </html>

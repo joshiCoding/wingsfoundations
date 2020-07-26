@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>{{ site.title }} | Gallery</title>
+
+    {% include head.html %}
+</head>
+<body>
+    {% include header.html %}
+
+    <section class="memories">
+        <h2 class="memories-head">Memories</h2>
+
+        <div class="memory">
+            <img src="{{ '/assets/images/memory-1-min.JPG' | absolute_url }}" alt="" class="memory-img">
+            <p class="memory-description">Inaugration function Photo-1</p>
+        </div>
+
+        <div class="memory">
+            <img src="{{ '/assets/images/memory-2-min.JPG' | absolute_url }}" alt="" class="memory-img">
+            <p class="memory-description">Inaugration function Photo-2</p>
+        </div>
+
+    </section>
+    {% include footer.html %}
+</body>
+</html>
