@@ -202,9 +202,13 @@ section{
         }
     }
     img{
-        width: 100vw;
-        position:absolute;
-        top:20%;
+        // width: 100vw;
+        width:100vw;
+        min-width:330px;
+        transform:translateY(-40%);
+        // min-width:448px;
+        // position:absolute;
+        top:20px;
         left:0;
         z-index:-10;
         align-self:center;
@@ -479,6 +483,7 @@ footer{
         
     }
     .hero{
+        background:linear-gradient(180deg, #FFF7F9 0%, #FFF6F9 27.28%, rgba(107, 111, 115, 0.6) 78.34%, rgba(34, 45, 49, 0) 100%);
         &-content{
             &-head{
                 font-size:50px;
@@ -492,6 +497,9 @@ footer{
             &-btn{
                 font-size:20px;
             }    
+        }
+        img{
+
         }
         
     }
@@ -541,6 +549,10 @@ footer{
             }
             &-para{
                 font-size:20px;
+            }
+            &-circle{
+                width:250px;
+                height:250px;
             }
         }
     }

@@ -31,7 +31,7 @@ section { display: flex; flex-direction: column; align-items: center; justify-co
 .hero-content-btn a { text-decoration: none; color: var(--color-font-light); }
 .hero-content-btn:hover { background: transparent; box-shadow: inset 0px 0px 0px 2px var(--color-font); }
 .hero-content-btn:hover a { color: var(--color-font); }
-.hero img { width: 100vw; position: absolute; top: 20%; left: 0; z-index: -10; align-self: center; justify-self: center; }
+.hero img { width: 100vw; min-width: 330px; transform: translateY(-40%); top: 20px; left: 0; z-index: -10; align-self: center; justify-self: center; }
 
 .what-head, .why-head, .who-head, .memories-head { font-size: 40px; font-weight: 700; }
 .what-tagline, .why-tagline, .who-tagline, .memories-tagline { font-size: 20px; font-weight: 500; margin-bottom: 20px; }
@@ -88,6 +88,7 @@ footer p a { color: white; }
 
 @media only screen and (min-width: 600px) { header nav .head-btn { font-size: 20px; }
   header .hamburger-menu { width: 150px; }
+  .hero { background: linear-gradient(180deg, #FFF7F9 0%, #FFF6F9 27.28%, rgba(107, 111, 115, 0.6) 78.34%, rgba(34, 45, 49, 0) 100%); }
   .hero-content-head { font-size: 50px; }
   .hero-content-moto { font-size: 20px; }
   .hero-content-para { font-size: 20px; }
@@ -103,6 +104,7 @@ footer p a { color: white; }
   .why-box { width: 400px; display: inline-flex; }
   .why-box-head { font-size: 22px; }
   .why-box-para { font-size: 20px; }
+  .why-box-circle { width: 250px; height: 250px; }
   .donate { width: 700px; }
   .donate-action-head { font-size: 22px; }
   .donate-action-content { font-size: 20px; }
