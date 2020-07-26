@@ -115,3 +115,5 @@ footer p a { color: white; }
   .contact-info-head { font-size: 20px; }
   .contact-info-content { font-size: 18px; }
   footer { width: 100%; } }
+@media only screen and (min-width: 800px) { .hero { height: 500px; background: linear-gradient(180deg, #FFF7F9 0%, #FFF6F9 17.28%, rgba(107, 111, 115, 0.3) 98.34%, rgba(34, 45, 49, 0.5) 100%); }
+  .hero img { transform: translateY(-60%); } }
