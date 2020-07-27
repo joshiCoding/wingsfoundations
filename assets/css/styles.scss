@@ -215,12 +215,15 @@ section{
         justify-self:center;
         
     }
+    margin-bottom:0;
+    padding-bottom:0;
 }
 
 .what,
 .why,
 .who,
 .memories{
+    background:lightblue;
     &-head{
         font-size:40px;
         font-weight:700;

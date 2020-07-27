@@ -21,7 +21,7 @@ header nav .hamburger-menu-options-open li a { font-size: 20px; }
 
 section { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: calc( 2 * var(--spacer)); text-align: center; }
 
-.hero { height: 120vh; justify-content: flex-start; background: var(--gradient-hero); position: relative; overflow: hidden; }
+.hero { height: 120vh; justify-content: flex-start; background: var(--gradient-hero); position: relative; overflow: hidden; margin-bottom: 0; padding-bottom: 0; }
 .hero-content { text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; height: 70%; }
 .hero-content-head { width: 68%; font-size: 40px; position: relative; margin: 20px; }
 .hero-content-head::before { content: ''; position: absolute; width: 120%; height: 2px; background: black; bottom: -10%; left: -10%; }
@@ -33,6 +33,7 @@ section { display: flex; flex-direction: column; align-items: center; justify-co
 .hero-content-btn:hover a { color: var(--color-font); }
 .hero img { width: 100vw; min-width: 330px; transform: translateY(-40%); top: 20px; left: 0; z-index: -10; align-self: center; justify-self: center; }
 
+.what, .why, .who, .memories { background: lightblue; }
 .what-head, .why-head, .who-head, .memories-head { font-size: 40px; font-weight: 700; }
 .what-tagline, .why-tagline, .who-tagline, .memories-tagline { font-size: 20px; font-weight: 500; margin-bottom: 20px; }
 .what-para, .why-para, .who-para, .memories-para { padding: 20px 15px; font-size: 16px; }
