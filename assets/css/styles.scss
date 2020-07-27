@@ -141,7 +141,7 @@ section{
 
 //hero
 .hero{
-    height:120vh;
+    height:100vh;
     justify-content:flex-start;
     background:var(--gradient-hero);
     position:relative;
@@ -217,13 +217,13 @@ section{
     }
     margin-bottom:0;
     padding-bottom:0;
+    // background:lightblue;
 }
 
 .what,
 .why,
 .who,
 .memories{
-    background:lightblue;
     &-head{
         font-size:40px;
         font-weight:700;
